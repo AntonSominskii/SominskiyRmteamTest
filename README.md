@@ -19,6 +19,8 @@ rmteamTest/
 │               └── PublicPageTest.java     # Тест-кейсы (JUnit)
 ├── pom.xml                                  # Maven-конфигурация (Selenide, JUnit, Allure)
 └── README.md                                # Документация (вы читаете её)
+```
+
 ---
 
 ## Описание тестовых сценариев
