@@ -17,8 +17,8 @@ rmteamTest/
 │           └── tests/
 │               ├── PublicPageBaseTest.java # Базовый класс (setUp, tearDown)
 │               └── PublicPageTest.java     # Тест-кейсы (JUnit)
-├── pom.xml                                  # Maven-конфигурация (Selenide, JUnit, Allure)
-└── README.md                                # Документация (вы читаете её)
+├── pom.xml                                 # Maven-конфигурация (Selenide, JUnit, Allure)
+└── README.md                               # Документация (вы читаете её)
 ```
 
 ---
