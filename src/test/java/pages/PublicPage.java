@@ -26,6 +26,8 @@ public class PublicPage {
     private SelenideElement userAgreementCheckbox = $("#mat-mdc-checkbox-3-input");
     private SelenideElement getConfirmationCodeButton = $(".button-timer");
     private SelenideElement contactMeButton = $("div.footer > button:nth-child(2)");
+    private SelenideElement productImage = $("#mat-mdc-dialog-0 > div > div > product-feature-dialog > " +
+            "div:nth-child(2) > div > img");
 
     public void clickProductsButton() {
         productsButton.shouldBe(visible).shouldBe(enabled).shouldHave(text("Продукты")).click();
@@ -35,6 +37,7 @@ public class PublicPage {
     public void clickSmartlinkInformationExchangeButton() {
         smartlinkInformationExchangeButton.shouldBe(visible).shouldBe(enabled).shouldHave(text("Обмен информацией")).click();
         modalWindowInformationExchangeHeader.shouldBe(visible).shouldHave(text("Обмен информацией"));
+        productImage.shouldBe(visible).shouldHave(attributeMatching("src", "^(https?://).*"));
     }
 
     public void clickContactsButton() {

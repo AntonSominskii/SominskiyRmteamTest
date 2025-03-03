@@ -22,7 +22,7 @@ public class PublicPageTest extends PublicPageBaseTest {
     @Story("Боковое меню(слева)")
     @DisplayName("Просмотр информации о продукте")
     @Description("Тест переходит к разделу \"Продукты\", нажимает на кнопку показателя продукта \"Smartlink\" - " +
-            "\"Обмен информацией\" с последующей проверкой хедера после нажатия")
+            "\"Обмен информацией\" с последующей проверкой хедера и наличия изображения после нажатия")
     public void productInformationExchangeGetInfo() {
         publicPage.clickProductsButton();
         publicPage.clickSmartlinkInformationExchangeButton();
