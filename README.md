@@ -8,21 +8,17 @@
 ## Структура проекта
 
 ```plaintext
-SominiskiyRmteamTest/
+rmteamTest/
 ├── src/
-│   ├── main/
-│   │   └── java/
-│   │       └── pages/
-│   │           └── PublicPage.java          # Класс PageObject для публичного раздела
 │   └── test/
 │       └── java/
+│           ├── pages/
+│           │   └── PublicPage.java         # Класс PageObject
 │           └── tests/
-│               ├── PublicPageBaseTest.java  # Базовый класс для конфигурации (setUp, tearDown)
-│               └── PublicPageTest.java      # Тест-кейсы (JUnit)
+│               ├── PublicPageBaseTest.java # Базовый класс (setUp, tearDown)
+│               └── PublicPageTest.java     # Тест-кейсы (JUnit)
 ├── pom.xml                                  # Maven-конфигурация (Selenide, JUnit, Allure)
 └── README.md                                # Документация (вы читаете её)
-```
-
 ---
 
 ## Описание тестовых сценариев
