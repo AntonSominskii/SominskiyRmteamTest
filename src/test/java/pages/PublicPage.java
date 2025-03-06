@@ -8,12 +8,12 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class PublicPage {
 
-    private SelenideElement productsButton = $("nav ul li:nth-child(2)");
+    private SelenideElement productsButton = $("nav ul li:nth-of-type(2)");
     private SelenideElement productsHeader = $(".products-header");
     private SelenideElement smartlinkInformationExchangeButton = $("#products")
             .find(byText("Обмен информацией"));
     private SelenideElement modalWindowInformationExchangeHeader = $(".id");
-    private SelenideElement contactsButton = $("li.ng-star-inserted:nth-child(7)");
+    private SelenideElement contactsButton = $("li.ng-star-inserted:nth-of-type(7)");
     private SelenideElement contactsHeader = $(".contacts-title");
     private SelenideElement contactUsButton = $(".contact-us-button");
     private SelenideElement contactUsModalWindowHeader = $(".header");
@@ -25,7 +25,7 @@ public class PublicPage {
     private SelenideElement privacyPolicyCheckbox = $("#mat-mdc-checkbox-2-input");
     private SelenideElement userAgreementCheckbox = $("#mat-mdc-checkbox-3-input");
     private SelenideElement getConfirmationCodeButton = $(".button-timer");
-    private SelenideElement contactMeButton = $("div.footer > button:nth-child(2)");
+    private SelenideElement contactMeButton = $(".footer button:nth-of-type(2)");
     private SelenideElement productImage = $("#mat-mdc-dialog-0 product-feature-dialog div:nth-of-type(2) img");
 
     public void clickProductsButton() {
