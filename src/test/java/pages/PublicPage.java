@@ -3,15 +3,15 @@ package pages;
 import com.codeborne.selenide.SelenideElement;
 
 import static com.codeborne.selenide.Condition.*;
+import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 
 public class PublicPage {
 
-    private SelenideElement productsButton = $("body > app-root > public > main-menu > nav > ul > " +
-            "li:nth-child(2)");
+    private SelenideElement productsButton = $("nav ul li:nth-child(2)");
     private SelenideElement productsHeader = $(".products-header");
-    private SelenideElement smartlinkInformationExchangeButton = $("#products > section > " +
-            "product-card:nth-child(3) > div > div.content > div.product-features > div:nth-child(2)");
+    private SelenideElement smartlinkInformationExchangeButton = $("#products")
+            .find(byText("Обмен информацией"));
     private SelenideElement modalWindowInformationExchangeHeader = $(".id");
     private SelenideElement contactsButton = $("li.ng-star-inserted:nth-child(7)");
     private SelenideElement contactsHeader = $(".contacts-title");
@@ -26,8 +26,7 @@ public class PublicPage {
     private SelenideElement userAgreementCheckbox = $("#mat-mdc-checkbox-3-input");
     private SelenideElement getConfirmationCodeButton = $(".button-timer");
     private SelenideElement contactMeButton = $("div.footer > button:nth-child(2)");
-    private SelenideElement productImage = $("#mat-mdc-dialog-0 > div > div > product-feature-dialog > " +
-            "div:nth-child(2) > div > img");
+    private SelenideElement productImage = $("#mat-mdc-dialog-0 product-feature-dialog div:nth-of-type(2) img");
 
     public void clickProductsButton() {
         productsButton.shouldBe(visible).shouldBe(enabled).shouldHave(text("Продукты")).click();
